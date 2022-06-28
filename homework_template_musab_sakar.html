@@ -35,7 +35,7 @@
 <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
 <!-- External CSS -->
-<link rel="stylesheet" href="style_temp.css">
+<link rel="stylesheet" href="style_fixed.css">
 
 <!-- External JS -->
 <script src="temp.js"></script>
@@ -58,37 +58,39 @@
             <!-- Toggle button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_id"
                 aria-controls="navbar_id" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
+                <i class="fa fa-bars"></i>
             </button>
 
             <!-- Collapsible wrapper -->
             <div class="collapse navbar-collapse" id="navbar_id">
                 <!-- Left links -->
-                <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
+                <ul class="navbar-nav nav-pills me-auto ms-5 mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link me-2" href="#ability"> <i class="fa-brands fa-battle-net"></i>Ability</a>
+                        <a class="nav-link text-center" href="#ability"> <i class="fa-solid fa-gauge-high"></i>Ability</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#section_3"> <i class="fa-solid fa-rectangle-ad"></i>NewsPaper</a>
+                        <a class="nav-link text-center" href="#section_3"> <i class="fa-solid fa-pen"></i></i>NewsPaper</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#section_2"><i class="fa-solid fa-blog"></i>Blog</a>
+                        <a class="nav-link text-center" href="#section_2"><i class="fa-brands fa-blogger"></i>Blog</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#section_6"> <i class="fa-solid fa-address-card"></i>Contact</a>
+                        <a class="nav-link text-center" href="#section_6"> <i class="fa-regular fa-address-book"></i></i>Contact</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#section_7"> <i class="fa-solid fa-people-group"></i>About Me</a>
+                        <a class="nav-link text-center" href="#section_7"> <i class="fa-solid fa-user-large"></i>About Me</a>
                     </li>
-
-                    <div id="autocomp">
-                        <label for="tags">Tags: </label>
-                        <input id="tags">
-                    </div>
+                    <li class="nav-item">
+                        <div id="autocomp">
+                            <label for="tags">Tags: </label>
+                            <input id="tags">
+                        </div>
+                    </li>
+                    
                 </ul>
                 <!-- Left links -->
 
@@ -270,6 +272,7 @@
         <!-- section-1 start : ability -->
         <section id="ability">
             <div class="container" style="margin-top:3rem; margin-bottom:3rem;">
+                
                 <p class="text-uppercase display-6 text-center text-light">Ability</p>
                 <div class="row">
                     <div class="col-md">
@@ -279,7 +282,7 @@
                                 <h4 class="card-title text-uppercase text-center">Html</h4>
                                 <p class="card-text  line_clamp4">Html5 Lorem ipsum dolor sit amet Lorem ipsum dolor sit
                                     amet.
-                                    consectetur adipisicing elit. Quae, fugiat.</p>
+                                    consectetur adipisicing elit. Quae, fugiat.</p>                                  
                             </div>
                         </div>
                     </div>
@@ -597,7 +600,7 @@
                 </div>
             </div>
         </section>
-        <!-- section-6 start -->
+        <!-- section-6 end -->
         <!-- section-7 start -->
         <section id="section_7">
             <div class="container">
