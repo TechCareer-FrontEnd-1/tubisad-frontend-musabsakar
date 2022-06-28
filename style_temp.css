@@ -128,20 +128,30 @@ body {
 
 /* section-1 */
 #ability {
+  font-size: 0.8rem;
   padding: 6rem;
-  background: #3d3d3d;
+  background: white;
+}
+
+#ability a{
+  border-width: 0.1rem;
+  font-size: 0.8rem;
+}
+
+#ability h4{
+  margin-top: 0.4rem;
 }
 
 #ability i {
-  color: red;
-  font-size: 8rem;
+  color: #3d3d3d;
+  font-size: 2.6rem;
 }
 
 /* #ability,#section_3,#section_2,#section_6{
     margin-bottom:6rem;
 } */
 
-#ability .card {
+/* #ability .card {
   box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.8);
 }
 
@@ -149,7 +159,7 @@ body {
   cursor: pointer;
   opacity: 0.7;
 }
-
+ */
 /* section-2: blog */
 #section_2 {
   /* background: url('picture/coffee-g4d61840d9_1920.jpg');
