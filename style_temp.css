@@ -79,9 +79,10 @@ p {
   opacity: 0.9;
 }
 
-#logo_div {
-  /* border-radius:50%; */
-}
+/* #logo_div {
+  border-radius:50%;
+} 
+*/
 
 #logo_div:hover {
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.6);
@@ -288,6 +289,28 @@ body {
   background-color: aliceblue;
 }
 
+#section_10{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color:rgba(240, 248, 255, 0.87);
+  
+}
+#section_10 p{
+  font-size: 0.8rem;
+}
+
+#section_10 b{
+  padding-left: 0.7rem;
+}
+
+#section_10 i{
+  margin-top: 1.7rem;
+}
+
+#section_10 img{
+  max-width: 20rem;
+}
+
 /* .nav-link:hover{
   color: orange;
 } */
@@ -295,6 +318,12 @@ body {
 #tab_menu p{
   font-size: 0.7rem;
 }
+
+#media_pic{
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
 #tab_picture{
   
   max-width: 10rem;
