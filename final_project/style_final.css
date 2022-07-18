@@ -1,0 +1,455 @@
+
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: 'Quicksand', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  background: #edeff1;
+}
+
+html {
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  text-align: justify;
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+}
+
+/* ############################################################################ */
+/* line-clamp */
+.line_clamp3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line_clamp4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line_clamp5 {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line_clamp6 {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line_clamp7 {
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ############################################################################ */
+
+/*  nav */
+#navbar {
+  opacity: 0.9;
+}
+
+/* #logo_div {
+    border-radius:50%;
+  } 
+  */
+
+/* #logo_div:hover {
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.6);
+    width: 10rem;
+  } */
+
+#navbar_id ul>li>a {
+  font-size: 0.8rem;
+}
+
+#navbar_id ul>li {
+  margin-right: 0.2rem;
+
+}
+
+#navbar_id ul>li>a>i {
+  margin-right: 0rem;
+  font-size: 0.8rem;
+  color: orangered;
+}
+
+#right_navbar>button,
+a {
+  font-size: 0.8rem;
+}
+
+/* ############################################################################ */
+/* header */
+header {
+  background-image: url('picture/nepal-2184940_1920.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 50rem;
+  padding-top: 15rem;
+  z-index: -1;
+}
+
+/* ##############################################################################*/
+/* main */
+
+
+/* section-1 */
+#ability {
+  font-size: 0.8rem;
+  padding: 6rem;
+  background: white;
+}
+
+#ability a {
+  border-width: 0.1rem;
+  font-size: 0.8rem;
+}
+
+#ability h4 {
+  margin-top: 0.4rem;
+}
+
+#ability i {
+  color: #3d3d3d;
+  font-size: 2.6rem;
+}
+
+
+/* #ability,#section_3,#section_2,#section_6{
+      margin-bottom:6rem;
+  } */
+
+/* #ability .card {
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.8);
+  }
+  
+  #ability .card:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+   */
+/* section-2: blog */
+#section_2 {
+  background-color: transparent;
+  background-image: url('/final_project/picture/light-bulb-gaaed6f670_1920.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.9;
+  padding: 6rem;
+}
+
+#section_2 .card {
+  margin-bottom: 2rem;
+}
+
+#section_2 .card .card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#section_2 .card>img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/* section-3 */
+#section_3 {
+  background: rgba(238, 237, 237, 0.671);
+  padding: 9rem;
+}
+
+#newspaper_id {
+  display: -webkit-box;
+  -webkit-line-clamp: 12;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-indent: 3rem;
+  /* column-count: 3;
+      column-rule:solid rgba(0,0,0,.6); */
+}
+
+/* back_to_top */
+#back_top {
+  position: fixed;
+  color: orangered;
+  right: 0;
+  bottom: 0;
+  width: 2.3rem;
+  padding-top: 0.2rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.8rem;
+  border-radius: 1rem;
+  opacity: 0.7;
+}
+
+#back_top:hover {
+  width: 2.3rem;
+  opacity: 0.9;
+}
+
+#section_6 {
+  padding: 8rem;
+  background-color: #313131;
+  background-size: cover;
+
+}
+
+#section_7 {
+  background-color: transparent;
+  background-image: url('/final_project/picture/northern-lights-3273425_1920.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 6rem;
+  color: aliceblue;
+
+}
+
+#section_7>h4 {
+  margin-top: 20px;
+
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  line-height: 40px;
+}
+
+/* 
+  #section_7 > span, p, h4{
+    color: aliceblue;
+  } */
+
+#section_7>img {
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 5rem;
+}
+
+#section_7>img:hover {
+  opacity: 0.9;
+}
+
+#section_8 {
+  text-align: center;
+  background-color: #313131;
+}
+
+#section_8 i {
+  font-size: 2.6rem;
+  color: orange;
+  margin-bottom: 0.6rem;
+}
+
+#section_8 h1 {
+  color: aliceblue;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+#section_8 h2 {
+  color: aliceblue;
+}
+
+#section_8 h5 {
+  color: orangered;
+  padding-bottom: 1rem;
+}
+
+#section_9 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: aliceblue;
+}
+
+#section_9 li{
+  font-size: 0.7rem;
+}
+
+#education_ul{
+  list-style-type: circle;
+}
+
+#section_10 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(240, 248, 255, 0.87);
+
+}
+
+#section_10 p {
+  font-size: 0.8rem;
+}
+
+#section_10 b {
+  padding-left: 0.7rem;
+}
+
+#section_10 i {
+  margin-top: 1.7rem;
+}
+
+#section_10 img {
+  max-width: 20rem;
+}
+
+#section_11{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#section_11 .carousel{
+  max-width: 50rem;
+  margin-left: 3rem;
+
+}
+
+#section_11 .carousel_image{
+  height: 10rem;
+  width: 20rem;
+  max-width: 20rem;
+}
+
+#section_11 i{
+  font-size: 3rem;
+  color: orangered;
+}
+
+#section_11 .caroitem{
+  
+  max-width: 50rem;
+  align-items: center;
+}
+
+/* .nav-link:hover{
+    color: orange;
+  } */
+
+#tab_menu p {
+  font-size: 0.7rem;
+}
+
+#media_pic {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+#tab_picture {
+
+  max-width: 10rem;
+
+}
+
+/* #tab_pic{
+    height: 0rem;
+    width: 10rem;
+  } */
+
+/* ################################################################# */
+
+#contact_form>.row>div {
+  margin-bottom: 0.6rem;
+}
+
+#contact_form {
+
+  padding: 1rem;
+}
+
+/* ################################################################# */
+
+/* footer */
+footer {
+  min-height: 20rem;
+  width: auto;
+  background-color: #3d3d3d;
+  color: white;
+}
+
+#address_id i {
+  margin-right: 0.6rem;
+  color: blueviolet;
+}
+
+#address_id a {
+  color: chartreuse;
+  font-size: 0.8rem;
+}
+
+#copy_right {
+  background: #2f3337;
+}
+
+.ui-autocomplete {
+  z-index: 4000 !important;
+}
+
+#profile {
+  padding-left: 11rem;
+}
+
+#profile_photo {
+  max-width: 30rem;
+  border-radius: 10rem;
+}
+
+#section_2 .col{
+  width: 25%;
+}
+
+@media screen and (min-width:10px){
+  #section_2 .col{
+    width: 100%;
+  }
+}
+
+/* 600<=<899 */
+@media screen and (min-width:600px){
+  #section_2 .col{
+    width: 50%;
+  }
+}
+
+/* 900<=<1199 */
+@media screen and (min-width:900px){
+  #section_2 .col{
+    width: 25%;
+  }
+}
+
+/* x>=1200 */
+@media screen and (min-width:1200px){
+  #section_2 .col{
+    width: 25%;
+  }
+}

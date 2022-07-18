@@ -1,0 +1,920 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <!-- title-->
+    <title>My page</title>
+    <!-- favicon -->
+    <link rel="icon" href="/final_project/picture/glasses.png" />
+
+    <!-- Turkce karakter -->
+    <meta charset="utf-8" />
+
+    <!-- responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- seo -->
+    <meta name="keywords" content="Musab, Salih, Şakar, cv, profile, frontend, programmer" />
+    <meta name="description" content="one pages, html5,css3,js,jquery,bootstrap,seo" />
+    <meta name="author" content="Musab Salih Şakar" />
+
+    <!-- Google Fonts-->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Quicksand:wght@300&display=swap"
+    rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
+        rel="stylesheet">
+
+
+    <!-- Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+
+    <!-- jquery UI -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+
+
+
+    <!-- Bootstrap CSS v5.0.2 -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style_final.css">
+
+    <!-- animate CSS-->
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <!-- wow js-->
+    <script src="../js/wow.min.js"></script>
+    <script> new WOW().init() </script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+
+    <!-- Navbar start -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="navbar">
+        <!-- Container wrapper -->
+        <div class="container" id="navbar-example">
+            <!-- Navbar brand -->
+            <div id="logo_div">
+                <a class="navbar-brand me-2" href="#">
+                    <img src="/final_project/picture/glasses.png" height="64" alt="MDB Logo" loading="lazy" />
+                </a>
+            </div>
+
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_id"
+                aria-controls="navbar_id" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbar_id">
+                <!-- Left links -->
+                <ul class="navbar-nav nav-pills me-auto ms-5 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link btn-outline-warning" href="#ability">Ability</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link btn-outline-warning" href="#section_3"> Summary</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link btn-outline-warning" href="#section_2">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link btn-outline-warning" href="#section_6"> Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link btn-outline-warning" href="#section_7"> About
+                            Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-outline-warning" href="#section_11">Comments</a>
+                    </li>
+                    <li class="nav-item">
+                        <div id="autocomp">
+                            <label for="tags"></label>
+                            <input id="tags">
+                        </div>
+                    </li>
+
+                </ul>
+                <!-- Left links -->
+
+                <div class="d-flex align-items-center" id="right_navbar">
+                    <button data-bs-toggle="modal" data-bs-target="#modelId" type="button"
+                        class="btn btn-outline-warning px-3 me-3">
+                        Login
+                    </button>
+                    <button data-bs-toggle="modal" data-bs-target="#registerId" type="button"
+                        class="btn btn-outline-warning me-3">
+                        Register
+                    </button>
+                    <!-- <a class="btn btn-dark px-3" href="https://github.com/mdbootstrap/mdb-ui-kit" role="button"><i
+                            class="fab fa-github"></i></a> -->
+                </div>
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar ends -->
+
+    <!-- Button trigger modal -->
+
+
+
+    <!-- modal-login start -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title">Login</h6>
+                    <button type="button" class="btn-close btn-sm" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-1"> <label class="form-label" for="user_email">
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </label></div>
+                                    <div class="col">
+                                        <input type="text" id="user_email" name="user_email"
+                                            placeholder="email adresiniz ..." class="form-control" />
+                                        <span id="validation_email" class="text-danger"
+                                            style="font-size:.8rem ;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-1"> <label class="form-label" for="user_password">
+                                            <i class="fa-solid fa-key"></i>
+                                        </label></div>
+                                    <div class="col">
+                                        <input type="text" id="user_password" name="user_password"
+                                            placeholder="şifreniz ..." class="form-control" />
+                                        <span id="validation_password" class="text-danger"
+                                            style="font-size:.8rem ;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-outline mt-2 mb-2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-1"> <label class="form-label" for="form2Example1">
+                                        </label></div>
+                                    <div class="col">
+                                        <button type="reset" class="btn btn-outline-danger">Clean</button>
+                                        <button id="btnSubmit" type="submit"
+                                            class="btn btn-outline-primary">Login</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal-login ends -->
+
+
+    <!-- Modal Register -->
+    <div class="modal fade" id="registerId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-person"></i></span>
+                        <input type="text" class="form-control" placeholder="Enter username">
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="text" class="form-control" placeholder="Enter email">
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                        <input type="text" class="form-control" placeholder="Enter password">
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                        <input type="text" class="form-control" placeholder="Enter password again">
+                    </div>
+                </div>
+
+                <div class="form-outline mt-2 mb-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-1"> <label class="form-label" for="form2Example1">
+                                </label></div>
+                            <div class="col">
+                                <button type="reset" class="btn btn-outline-danger">Clean</button>
+                                <button id="btnSubmit" type="submit" class="btn btn-outline-primary">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal-register ends -->
+
+    <!-- header-start -->
+    <header id="header">
+        <div class="jumbotron text-white" style="background-color: transparent;">
+            <div class="container" style="opacity:.9; ">
+                <div class="text-center">
+                    <h1 class="text-uppercase display-3 wow bounceIn animated" data-wow-delay=".40s">Musab Salih Şakar
+                    </h1>
+                    <div class="mx-auto" style="max-width:600px;">
+                        <div class="input-group mb-3 wow bounceIn animated" data-wow-delay=".50s">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <button class="btn btn-success" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                    <h4 class="wow bounceIn animated" data-wow-delay=".60s">FrontEnd Web Developer</h4>
+                    <a class="btn btn-outline-warning shadow wow bounceIn animated" data-wow-delay=".70s" href="#">For
+                        more...</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- main-start -->
+    <main>
+        <!-- section-1 start : ability -->
+        <section id="ability">
+            <div class="container" style="margin-top:3rem; margin-bottom:3rem;">
+
+                <p class="text-uppercase display-6 text-center wow fadeIn" data-wow-delay=".40s">Abılıty</p>
+                <div class="row">
+                    <div class="col text-center m-3 wow fadeInUp" data-wow-delay=".60s">
+                        <br>
+                        <i class="fa-solid fa-bolt"></i>
+                        <h4>Electric</h4>
+
+                        <p>Electrical grid design, high voltage line design,
+                            indoor electrical network design.</p>
+                        <a class="btn btn-outline-dark shadow" href="#">Read more</a>
+                    </div>
+                    <div class="col text-center m-3 wow fadeInUp" data-wow-delay=".80s">
+                        <br>
+                        <i class="fa-solid fa-laptop"></i>
+                        <h4>Electronics</h4>
+                        <p>IC design, logic circuit design, digital/analog signal process circuit design,
+                            power circuit design.
+                        </p>
+                        <a class="btn btn-outline-dark shadow" href="#">Read more</a>
+                    </div>
+                    <div class="col text-center m-3 wow fadeInUp" data-wow-delay="1s">
+                        <br>
+                        <i class="fa-solid fa-keyboard"></i>
+                        <h4>Programming</h4>
+                        <p>C programming, Python, MATLAB, Proteus, QUCS, HTML, CSS, Javascript, Bootstrap,
+                            Bot programming, Web scraping, Desktop software developing</p>
+                        <a class="btn btn-outline-dark shadow" href="#">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section-1 end -->
+
+        <!-- section-3 start : Summary -->
+        <section id="section_3">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-uppercase display-6 text-center wow fadeInDown" data-wow-delay=".20s">summary</h2>
+                    <h4 class="text-center wow fadeInRight" data-wow-delay=".30s"><em>Electrical and Electronics
+                            Engineer</em></h4>
+                    <p class="wow fadeIn" data-wow-delay=".60s" id="newspaper_id">
+                        Hi, I'm Musab Salih Şakar. I'm a fresh graduate from Dokuz Eylül University,
+                        electrical and electronics engineering department. I did an internship on PLC systems
+                        in the computer department of HABAŞ company. I know various programming languages
+                        ​​and markup languages. I also know how to use circuit board design and simulation
+                        programs. Although I do not have much experience, I have the ability to learn
+                        quickly and effectively. I act harmoniously and communicate effectively in
+                        group work. I want to work in a company where I can contribute by using
+                        the knowledge and skills I have acquired and to advance my career.
+                    </p>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- section-3 end -->
+
+        <!-- section-2 start : Blog -->
+        <section id="section_2">
+            <div class="container">
+                <div class="row card_colon">
+                    <p class="text-uppercase display-6 text-center text-light wow fadeIn" data-wow-delay=".30s"
+                        id="blog">Blog</p>
+                    <div class="col">
+                        <div class="card wow rotateInDownLeft animated" data-wow-delay=".40s">
+
+                            <img class="card-img-top" src="picture/building-gbe099cd48_1280.jpg" alt="Title">
+
+                            <div class="card-body">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur elit.Doloremque cupiditate,
+                                    nemo itaque, aut reprehenderit repellendus quasi nesciunt velit molestiae possimus
+                                    quo. Dolores
+                                    perferendis a omnis dignissimos dolore praesentium doloremque repellat?
+                                    Tempora quasi similique corporis, accusamus officia voluptatem incidunt consequatur
+                                    enim ab
+                                    facere ea, vitae sapiente molestias ipsam totam aut consequuntur esse optio! Amet
+                                    sapiente
+                                    minima aspernatur, eveniet ex delectus nisi.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card wow rotateInDownLeft animated" data-wow-delay=".50s">
+                            <img class="card-img-top" src="picture/laptop-ge11cf7ed6_1920.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur elit.Doloremque cupiditate,
+                                    nemo itaque, aut reprehenderit repellendus quasi nesciunt velit molestiae possimus
+                                    quo. Dolores
+                                    perferendis a omnis dignissimos dolore praesentium doloremque repellat?
+                                    Tempora quasi similique corporis, accusamus officia voluptatem incidunt consequatur
+                                    enim ab
+                                    facere ea, vitae sapiente molestias ipsam totam aut consequuntur esse optio! Amet
+                                    sapiente
+                                    minima aspernatur, eveniet ex delectus </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card wow rotateInDownLeft animated" data-wow-delay=".60s">
+                            <img class="card-img-top" src="picture/meeting-g9a3aff941_1920.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur elit.Doloremque cupiditate,
+                                    nemo itaque, aut reprehenderit repellendus quasi nesciunt velit molestiae possimus
+                                    quo. Dolores
+                                    perferendis a omnis dignissimos dolore praesentium doloremque repellat?
+                                    Tempora quasi similique corporis, accusamus officia voluptatem incidunt consequatur
+                                    enim ab
+                                    facere ea, vitae sapiente molestias ipsam totam aut consequuntur esse optio! Amet
+                                    sapiente
+                                    minima aspernatur, eveniet ex delectus </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card wow rotateInDownLeft animated" data-wow-delay=".70s">
+                            <img class="card-img-top" src="picture/seaside.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur elit.Doloremque cupiditate,
+                                    nemo itaque, aut reprehenderit repellendus quasi nesciunt velit molestiae possimus
+                                    quo. Dolores
+                                    perferendis a omnis dignissimos dolore praesentium doloremque repellat?
+                                    Tempora quasi similique corporis, accusamus officia voluptatem incidunt consequatur
+                                    enim ab
+                                    facere ea, vitae sapiente molestias ipsam totam aut consequuntur esse optio! Amet
+                                    sapiente
+                                    minima aspernatur, eveniet ex delectus </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card wow rotateInDownLeft animated" data-wow-delay=".80s">
+                            <img class="card-img-top" src="picture/tree-736885_1280.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur elit.Doloremque cupiditate,
+                                    nemo itaque, aut reprehenderit repellendus quasi nesciunt velit molestiae possimus
+                                    quo. Dolores
+                                    perferendis a omnis dignissimos dolore praesentium doloremque repellat?
+                                    Tempora quasi similique corporis, accusamus officia voluptatem incidunt consequatur
+                                    enim ab
+                                    facere ea, vitae sapiente molestias ipsam totam aut consequuntur esse optio! Amet
+                                    sapiente
+                                    minima aspernatur, eveniet ex delectus </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card wow rotateInDownLeft animated" data-wow-delay=".90s">
+                            <img class="card-img-top" src="picture/office-gc2455a673_1920.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur elit.Doloremque cupiditate,
+                                    nemo itaque, aut reprehenderit repellendus quasi nesciunt velit molestiae possimus
+                                    quo. Dolores
+                                    perferendis a omnis dignissimos dolore praesentium doloremque repellat?
+                                    Tempora quasi similique corporis, accusamus officia voluptatem incidunt consequatur
+                                    enim ab
+                                    facere ea, vitae sapiente molestias ipsam totam aut consequuntur esse optio! Amet
+                                    sapiente
+                                    minima aspernatur, eveniet ex delectus </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card wow rotateInDownLeft animated" data-wow-delay="1s">
+                            <img class="card-img-top" src="picture/hd-wallpaper-3605547_1920.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur elit.Doloremque cupiditate,
+                                    nemo itaque, aut reprehenderit repellendus quasi nesciunt velit molestiae possimus
+                                    quo. Dolores
+                                    perferendis a omnis dignissimos dolore praesentium doloremque repellat?
+                                    Tempora quasi similique corporis, accusamus officia voluptatem incidunt consequatur
+                                    enim ab
+                                    facere ea, vitae sapiente molestias ipsam totam aut consequuntur esse optio! Amet
+                                    sapiente
+                                    minima aspernatur, eveniet ex delectus </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card wow rotateInDownLeft animated" data-wow-delay="1.1s">
+                            <img class="card-img-top" src="picture/transparent.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur elit.Doloremque cupiditate,
+                                    nemo
+                                    itaque, aut reprehenderit repellendus quasi nesciunt velit molestiae possimus quo.
+                                    Dolores perferendis a
+                                    omnis dignissimos dolore praesentium doloremque repellat?
+                                    Tempora quasi similique corporis, accusamus officia voluptatem incidunt consequatur
+                                    enim ab facere ea,
+                                    vitae sapiente molestias ipsam totam aut consequuntur esse optio! Amet sapiente
+                                    minima aspernatur,
+                                    eveniet ex delectus </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- section-2 end -->
+
+
+        <!-- section-6 start : Contact -->
+        <!-- contact -->
+        <section id="section_6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="text-center text-uppercase text-light wow fadeIn" data-wow-delay="0.20s">Contact</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <form action="#!" id="contact_form">
+                            <div class="row">
+                                <div class="col-md-6 wow zoomIn" data-wow-delay="0.30s">
+                                    <input type="text" placeholder="name" class="form-control">
+                                </div>
+                                <div class="col-md-6 wow zoomIn" data-wow-delay="0.40s">
+                                    <input type="text" placeholder="surname" class="form-control">
+                                </div>
+                                <div class="col-md-4 wow zoomIn" data-wow-delay="0.50s">
+                                    <input type="text" placeholder="code" class="form-control">
+                                </div>
+                                <div class="col-md-8 wow zoomIn" data-wow-delay="0.60s">
+                                    <input type="text" placeholder="phone number" class="form-control">
+                                </div>
+                                <div class="col-md-12 wow zoomIn" data-wow-delay="0.70s">
+                                    <input type="email" placeholder="email adress" class="form-control">
+                                </div>
+
+                                <div class="col-md-12 wow zoomIn" data-wow-delay="0.80s">
+                                    <fieldset>
+                                        <textarea name="message" rows="6" class="form-control" id="message"
+                                            placeholder="Your message..." required=""></textarea>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-12 wow zoomIn" data-wow-delay="0.90s">
+                                    <fieldset>
+                                        <button type="reset" class="btn btn-danger">Clear </button>
+                                        <button type="submit" class="btn btn-primary">Send Message </button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6 wow zoomIn" data-wow-delay="1s">
+                        <div id="map">
+                            <iframe
+                                src="https://maps.google.com/maps?q=%C5%9File,istanbul,turkey&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                width="100%" height="420px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section-6 end -->
+
+        <!-- section-7 start : About Me -->
+        <section id="section_7">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 ">
+                        <span class="wow fadeInLeft" data-wow-delay=".30s">About Me</span>
+                        <h4 class="wow fadeInLeft" data-wow-delay=".40s">Profession: <em
+                                style="color:orangered">Frontend Developer</em></h4>
+                        <p class="wow fadeInLeft" data-wow-delay=".50s"> <em style="color: #f5a425; "> My ability of
+                                technology:</em>
+                            html5, css3, js, jqyuery, bootstrap, react, JavaSE, Spring, Springmvc ,
+                            Spring Data, Spring Security, Jsp, Jsf, Mysql,
+                            Docker, Kubernates,Ansible, Verilog, FPGA, C, Python, MATLAB, Desktop Software Development,
+                            Proteus, Unity.
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 ">
+                        <h4 class="wow fadeInRight" data-wow-delay=".30s" id="profile">My Profiles</h4>
+                        <a href="https://www.youtube.com">
+                            <img class="wow fadeInRight" data-wow-delay=".40s" id="profile_photo"
+                                src="picture/software-developer-6521720_1920.jpg"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section-7 end -->
+
+        <!-- section-8 start : Interesting facts -->
+        <section id="section_8">
+            <div class="container">
+                <h1 class="wow fadeInLeft" data-wow-delay=".20s">Some interesting facts</h1>
+                <div class="row">
+                    <div class="col-md-3 wow fadeIn" data-wow-delay=".70s">
+                        <i class="fa fa-user"></i>
+                        <h2>50</h2>
+                        <h5>Happy Customers</h5>
+                    </div>
+                    <div class="col-md-3 wow fadeIn" data-wow-delay=".80s">
+                        <i class="fa fa-code"></i>
+                        <h2>10000</h2>
+                        <h5>Lines of code</h5>
+                    </div>
+                    <div class="col-md-3 wow fadeIn" data-wow-delay=".90s">
+                        <i class="fa fa-lock"></i>
+                        <h2>10</h2>
+                        <h5>Projects</h5>
+                    </div>
+                    <div class="col-md-3 wow fadeIn" data-wow-delay="1s">
+                        <i class="fa fa-award"></i>
+                        <h2>30</h2>
+                        <h5>Awards </h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section-8 end -->
+
+        <!-- section-9 start : Pills -->
+        <section id="section_9">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <ul class="nav nav-pills flex-coloumn">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-bs-toggle="pill" href="#msg">Education</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="pill" href="#pro">Sertificates</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="pill" href="#set">Projects</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="tab-content" id="tab_menu">
+                            <div class="tab-pane fade show active" id="msg">
+                                <h5>Education</h5>
+                                <ul id="education_ul">
+                                    <li>2004-2012   75.Yıl Elementary School</li>
+                                    <br>
+                                    <li>2012-2016   Dr.Vasıf Topçu Science High School</li>
+                                    <br>
+                                    <li>2016-2021   Dokuz Eylül University-Electrical and Electronics Engineering</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="pro">
+                                <h5>Sertificates</h5>
+                                <ul id="education_ul">
+                                    <li>2016   Cisco Academy, IT Essentials</li>
+                                    <br>
+                                    <li>2020   BTK Academy, Python from the Start</li>
+                                    <br>
+                                    <li>2020   BTK Academy, Tessorflow for Data Science</li>
+                                    <br>
+                                    <li>2020   BTK Academy, Python Tutorial for Cyber Security</li>
+                                    <br>
+                                    <li>2020   BTK Academy, Introduction to Information Technologies</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="set">
+                                <h5>Projects</h5>
+                                <ul id="education_ul">
+                                    <li>Line follower robot project</li>
+                                    <br>
+                                    <li>PIC based temperature measurement system</li>
+                                    <br>
+                                    <li>Machine learning based prosthetic arm project</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div><img id="tab_picture" src="/final_project/picture/pisa.png" alt="tab picture"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section-9 end -->
+
+        <!-- section-10 start : Picture List -->
+        <section id="section_10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md wow fadeIn" data-wow-delay="0.20s">
+                        <img id="media_list" src="/final_project/picture/coffee-g4d61840d9_1920.jpg" alt="media_list">
+                    </div>
+                    <div class="col-md">
+                        <h5 class="wow fadeIn" data-wow-delay="0.30s">My Working Principles</h5>
+                        <ul>
+                            <li>
+                                <div class="d-flex wow fadeIn" data-wow-delay="0.40s">
+                                    <i class="fa fa-coffee"></i>
+                                    <div>
+                                        <b>Item 1</b>
+                                        <p>Coffee is the lifesaver!</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex wow fadeIn" data-wow-delay="0.50s">
+                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                    <div>
+                                        <b>Item 2</b>
+                                        <p>Always learn!</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex wow fadeIn" data-wow-delay="0.60s">
+                                    <i class="fa fa-clock"></i>
+                                    <div>
+                                        <b>Item 3</b>
+                                        <p>Organize your time correctly!</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md">
+                            <h5 class="wow fadeIn" data-wow-delay="0.30s">Picture section</h5>
+                            <p class="wow fadeIn" data-wow-delay="0.40s">Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Ipsa inventore ut id ab.
+                                Ducimus perferendis voluptate ex accusantium officia, accusamus nam repellat reiciendis
+                                nulla vero dolores non voluptas cum porro?
+                                Nulla est facere sequi omnis, accusamus deleniti dolorem fugiat aliquid porro excepturi
+                                nihil provident architecto dolores maiores optio voluptatibus ad dolor! Laudantium,
+                                beatae repellendus! Autem, iusto. Saepe quae et ipsum.
+                                Illum, dolores suscipit? Placeat, aut dolor, repellat facere suscipit officia libero
+                                obcaecati, quo facilis odit quis deserunt ex nemo et enim eos? Repellat, dolores
+                                temporibus? Perspiciatis, exercitationem voluptates. Sunt, reiciendis?</p>
+                        </div>
+                        <div class="col-md">
+                            <img class="wow fadeInRight" data-wow-delay="0.50s" id="media_pic"
+                                src="/final_project/picture/glasses-g05525675f_1920.jpg" alt="media_pic">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section-10 end -->
+
+        <!-- section-11 start : Comments -->
+        <section id="section_11">
+            <h2 class="text-center text-uppercase wow fadeIn" data-wow-delay="0.20s">Comments</h2>
+            <div class="container wow fadeInUp" data-wow-delay="0.30s">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner align-items-center">
+                        <div class="caroitem carousel-item active">
+                            <div class="position-relative p-4"><i class="fa fa-3x fa-quote-right position-absolute"
+                                    style="top:-10px;right:3rem;"></i>
+                                <div class="d-flex align-items-center mb-3"><img class="img-fluid rounded-circle"
+                                        src="/final_project/picture/testimonial-2.jpg" style="width:60px;height:60px;"
+                                        alt="website template image">
+                                    <div class="ml-3">
+                                        <h6 class="font-weight-semi-bold m-0">Client Name</h6>
+                                        <small>- Profession</small>
+                                    </div>
+                                </div>
+                                <p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr clita
+                                    lorem. Dolor ipsum sanct clita</p>
+                            </div>
+                        </div>
+                        <div class="caroitem carousel-item">
+                            <div class="position-relative p-4"><i class="fa fa-3x fa-quote-right position-absolute"
+                                    style="top:-10px;right:3rem;"></i>
+                                <div class="d-flex align-items-center mb-3"><img class="img-fluid rounded-circle"
+                                        src="/final_project/picture/testimonial-3.jpg" style="width:60px;height:60px;"
+                                        alt="website template image">
+                                    <div class="ml-3">
+                                        <h6 class="font-weight-semi-bold m-0">Client Name</h6>
+                                        <small>- Profession</small>
+                                    </div>
+                                </div>
+                                <p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr clita
+                                    lorem. Dolor ipsum sanct clita</p>
+                            </div>
+                        </div>
+                        <div class="caroitem carousel-item">
+                            <div class="position-relative p-4"><i class="fa fa-3x fa-quote-right position-absolute"
+                                    style="top:-10px;right:3rem;"></i>
+                                <div class="d-flex align-items-center mb-3"><img class="img-fluid rounded-circle"
+                                        src="/final_project/picture/testimonial-4.jpg" style="width:60px;height:60px;"
+                                        alt="website template image">
+                                    <div class="ml-3">
+                                        <h6 class="font-weight-semi-bold m-0">Client Name</h6>
+                                        <small>- Profession</small>
+                                    </div>
+                                </div>
+                                <p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr clita
+                                    lorem. Dolor ipsum sanct clita</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <i class="fa-solid fa-angle-left"></i>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+        <!-- section-11 end -->
+
+    </main>
+    <!-- main-end -->
+
+    <!-- footer-start -->
+    <footer class="text-center text-lg-start">
+
+        <!-- footer-tab-1 start -->
+        <section id="section_footer_1" class="p-4 border-top d-flex justify-content-center justify-content-lg-between">
+            <div class="me-5 d-none d-lg-block">
+            </div>
+
+            <!-- social -->
+            <div id="social_id">
+                <a href="#!" class="me-1 btn btn-outline-primary text-reset btn-floating">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#!" class="me-1 btn btn-outline-warning text-reset btn-floating">
+                    <i class="fa-brands fa-instagram-square"></i>
+                </a>
+                <a href="#!" class="me-1 btn btn-outline-success text-reset btn-floating">
+                    <i class="fa-brands fa-telegram"></i>
+                </a> <a href="#!" class="me-1 btn btn-outline-info text-reset btn-floating">
+                    <i class="fa-brands fa-google"></i>
+                </a> <a href="#!" class="me-1 btn btn-outline-danger text-reset btn-floating">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </section>
+        <!-- footer-tab-1 end -->
+
+
+        <!-- footer-tab-2 start -->
+        <section id="section_footer_2">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-4">
+                    <!-- medium device:4 
+                    large device :3
+                    xlarge device :4 -->
+
+                    <!-- left-1 -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-5 shadow">
+                        <h6 class="text-uppercase mb-4">
+                            <i style="font-size:2rem; margin-right:.3rem;" class="fa-brands fa-avianex"></i> Company
+                            INC.
+                        </h6>
+                        <p style="text-align:left!important" class="line_clamp3">
+                            E-Ticaret Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia veniam rerum ab
+                            explicabo temporibus tempora! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                            sit molestiae et veritatis voluptates iure.
+                        </p>
+                    </div>
+
+                    <!-- left-2 -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-5 shadow">
+                        <h6 class="text-uppercase mb-3">FrontEnd</h6>
+                        <p><a href="" class="text-reset"><i class="fa-brands fa-html5"></i> Html5</a></p>
+                        <p><a href="" class="text-reset"><i class="fa-brands fa-css3"></i> CSS3</a></p>
+                        <p><a href="" class="text-reset"><i class="fa-brands fa-js"></i> JS</a></p>
+                        <p><a href="" class="text-reset"><i class="fa-brands fa-j"></i> Jquery</a></p>
+                        <p><a href="" class="text-reset"><i class="fa-brands fa-react"></i> React</a></p>
+                    </div>
+
+                    <!-- left-3 -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-5 shadow">
+                        <h6 class="text-uppercase mb-3">Backend</h6>
+                        <p><a href="" class="text-reset"><i class="fa-solid fa-puzzle-piece"></i> Assembly</a></p>
+                        <p><a href="" class="text-reset"><i class="fa-brands fa-python"></i> Python</a></p>
+                        <p><a href="" class="text-reset"><i class="fa-brands fa-c"></i> C language</a></p>
+                    </div>
+
+                    <!-- left-4 -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-5 shadow" id="address_id">
+                        <h6 class="text-uppercase mb-3">Contact</h6>
+                        <p><i class="fa-solid fa-earth-africa"></i> Turkey</p>
+                        <p><i class="fa-solid fa-envelope-open-text"></i>
+                            <a href="mailto:musabsakar@gmail.com">musabsakar</a>
+                        </p>
+                        <p><i class="fa-solid fa-mobile-retro"></i>
+                            <a href="tel:90111223344">90 111 22 33 44</a>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button onclick="date()" class="btn btn-outline-warning"><i class="fa fa-calendar"></i>
+                                Date</button>
+                            <br><br>
+                            <div id="date_id"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer-tab-2 end -->
+
+
+
+        <!-- CopyRight -->
+        <div class="text-center p-5 bg-dark" id="copy_right">
+            ©2022 Copyright
+        </div>
+    </footer>
+    <!-- footer-end -->
+
+    <a id="back_top" href="#header"><i class="fa fa-2xl fa-arrow-circle-up wow bounce"></i> </a>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+    <!-- External JS -->
+    <script src="template_final.js"></script>
+
+</body>
+
+</html>
